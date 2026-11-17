@@ -1,0 +1,31 @@
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/pdfviewer/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/dialog/index.css';
+/* Loading indicator overlay shown during server-side PDF OCR conversion/analysis */
+.pdf-loading-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pdf-loading-hidden {
+  display: none;
+}
+
+.pdf-loading-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Center the Syncfusion spinner inside the overlay */
+.pdf-loading-overlay .e-spinner-pane {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
